@@ -1,0 +1,1 @@
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); if (cache.has(key)) return cacheget(key); const result = fn.apply(this, args); cache.set(key, result); return result; }; };
