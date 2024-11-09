@@ -1,0 +1,1 @@
+const objectFromPairs = (pairs) => pairs.reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {}); console.log(objectFromPairs([['a', 1], ['b', 2]]));
